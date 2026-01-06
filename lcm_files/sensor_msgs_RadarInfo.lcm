@@ -1,0 +1,39 @@
+package sensor_msgs;
+
+struct RadarInfo {
+    std_msgs.Header header;
+    string sensor_model;
+    string firmware_version;
+    string serial_number;
+    byte sensor_status;
+    string sensor_info;
+    boolean is_connected;
+    boolean is_streaming;
+    float carrier_frequency_ghz;
+    float bandwidth_mhz;
+    float frame_period_ms;
+    int32_t num_tx_antennas;
+    int32_t num_rx_antennas;
+    int32_t num_adc_samples;
+    float adc_sampling_rate_msps;
+    float range_resolution;
+    float velocity_resolution;
+    float azimuth_resolution;
+    float elevation_resolution;
+    float max_range;
+    float max_velocity;
+    float min_range;
+    float min_velocity;
+    float azimuth_fov_min;
+    float azimuth_fov_max;
+    float elevation_fov_min;
+    float elevation_fov_max;
+    boolean clutter_removal_enabled;
+    boolean multi_object_beamforming;
+    float cfar_threshold;
+    int32_t range_fft_size;
+    int32_t doppler_fft_size;
+    string config_file_path;
+    string config_file_content;
+    builtin_interfaces.Time config_timestamp;
+}

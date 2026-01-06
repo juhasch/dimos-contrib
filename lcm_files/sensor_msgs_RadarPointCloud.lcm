@@ -1,0 +1,31 @@
+package sensor_msgs;
+
+struct RadarPointCloud {
+    int32_t x_length;
+    int32_t y_length;
+    int32_t z_length;
+    int32_t range_length;
+    int32_t azimuth_length;
+    int32_t elevation_length;
+    int32_t velocity_length;
+    int32_t snr_length;
+    int32_t rcs_length;
+    int32_t noise_length;
+    int32_t doppler_bin_length;
+    int32_t intensity_length;
+    std_msgs.Header header;
+    int32_t frame_number;
+    int32_t num_points;
+    float x[x_length];
+    float y[y_length];
+    float z[z_length];
+    float range[range_length];
+    float azimuth[azimuth_length];
+    float elevation[elevation_length];
+    float velocity[velocity_length];
+    float snr[snr_length];
+    float rcs[rcs_length];
+    float noise[noise_length];
+    int16_t doppler_bin[doppler_bin_length];
+    float intensity[intensity_length];
+}
